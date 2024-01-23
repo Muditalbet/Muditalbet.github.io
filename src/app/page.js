@@ -295,7 +295,7 @@ export default function Home() {
               />
             </div>
             <div className={styles.text_content}>
-              <div>I'm Mudit Mangtani, a software engineer driven by a passion for transforming intricate challenges into elegant solutions through code. With a love for problem-solving, I navigate the dynamic world of software development, constantly seeking innovative approaches to address complexities. My commitment to excellence is reflected in my dedication to crafting efficient, creative, and impactful solutions. As I continue to evolve in this ever-changing field, I am excited about the endless possibilities that coding offers to make a positive impact.</div>
+              <div>I&apos;m Mudit Mangtani, a software engineer driven by a passion for transforming intricate challenges into elegant solutions through code. With a love for problem-solving, I navigate the dynamic world of software development, constantly seeking innovative approaches to address complexities. My commitment to excellence is reflected in my dedication to crafting efficient, creative, and impactful solutions. As I continue to evolve in this ever-changing field, I am excited about the endless possibilities that coding offers to make a positive impact.</div>
               <div>In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a Software engineer. Outside of work, I enjoy staying active through sports such as badminton and video games. I am confident in my ability to bring passion and value to any project.</div>
             </div>
           </div>
