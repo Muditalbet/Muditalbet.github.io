@@ -230,7 +230,7 @@ export default function Home() {
                 <span><SiAuthelia /></span>
                 <h4>Frameworks & Languages</h4>
                 <div>
-                  <p>Having amassed over 5 years of hands-on experience in developing diverse projects, I possess a profound and intuitive grasp of the intricacies involved in crafting top-tier software products. Throughout my journey, I've adeptly utilized a range of programming languages and frameworks to contribute to the creation of exceptional interfaces and robust logical structures. Following are some of the frameworks and programming I have used over that time.</p>
+                  <p>Having amassed over 5 years of hands-on experience in developing diverse projects, I possess a profound and intuitive grasp of the intricacies involved in crafting top-tier software products. Throughout my journey, I&apos;ve adeptly utilized a range of programming languages and frameworks to contribute to the creation of exceptional interfaces and robust logical structures. Following are some of the frameworks and programming I have used over that time.</p>
                   <div className={styles.skills}>
                     {programming_languages.sort((a, b) => a.name.localeCompare(b.name)).map((el, index) => (
                       <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
@@ -242,7 +242,7 @@ export default function Home() {
                 <span><GrDeploy /></span>
                 <h4>Databases & Cloud</h4>
                 <div>
-                  <p>Building is just the beginning; true value emerges when you connect your creations to the world. Throughout my journey, I've honed my skills not only in crafting code but also in deploying it effectively. Connecting the dots between creation and deployment is where the magic happens, and my experience reflects a seamless integration of coding, database management, and cloud services. Some of the services I used are.</p>
+                  <p>Building is just the beginning; true value emerges when you connect your creations to the world. Throughout my journey, I&apos;ve honed my skills not only in crafting code but also in deploying it effectively. Connecting the dots between creation and deployment is where the magic happens, and my experience reflects a seamless integration of coding, database management, and cloud services. Some of the services I used are.</p>
                   <div className={styles.skills}>
                     {databases.map((el, index) => (
                       <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
