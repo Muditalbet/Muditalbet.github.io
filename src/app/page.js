@@ -3,6 +3,8 @@ import styles from './page.module.css'
 import { RiJavascriptFill, RiReactjsFill, RiGithubFill } from "react-icons/ri";
 import { FaNodeJs, FaCcStripe, FaLinkedin } from "react-icons/fa";
 import { BiLogoNetlify } from "react-icons/bi";
+import { SiAuthelia } from "react-icons/si";
+import { GrDeploy } from "react-icons/gr";
 import { SiMui } from "react-icons/si";
 import { Cobe } from "./cobe"
 import Link from 'next/link';
@@ -11,92 +13,12 @@ import { useEffect } from 'react';
 import { LazyMotion, domAnimation } from "framer-motion"
 
 export default function Home() {
-  // const skills=[
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "AWS"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Azure"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "GCP"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "C/C++"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Java"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "JavaScript"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "MySQL/SQL"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Postgres SQL"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "MongoDB"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Express Js"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Nest Js"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Fastify"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Electron"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Next Js"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "React Js"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "TypeScript"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Sockets"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Firebase"
-  //   },
-  //   {
-  //     icon: <FaNodeJs />,
-  //     name: "Node.Js"
-  //   },
-  // ]
   const programming_languages = [
     {icon: <FaNodeJs />, name: "C/C++"},
     {icon: <FaNodeJs />, name: "Java"},
     {icon: <FaNodeJs />, name: "Python"},
     {icon: <FaNodeJs />, name: "JavaScript"},
     {icon: <FaNodeJs />, name: "TypeScript"},
-  ]
-  const frameworks = [
     {icon: <FaNodeJs />, name: "Django"},
     {icon: <FaNodeJs />, name: "FastAPI"},
     {icon: <FaNodeJs />, name: "ReactJs"},
@@ -107,16 +29,13 @@ export default function Home() {
   ]
 
   const databases = [
-    {icon: <FaNodeJs />,name: "MySQL"},
-    {icon: <FaNodeJs />,name: "MongoDB"},
-    {icon: <FaNodeJs />,name: "Postgres SQL"},
-  ]
-  
-  const clouds = [
     {icon: <FaNodeJs />, name: "AWS"},
     {icon: <FaNodeJs />, name: "Azure"},
     {icon: <FaNodeJs />, name: "GCP"},
-  ] 
+    {icon: <FaNodeJs />,name: "MongoDB"},
+    {icon: <FaNodeJs />,name: "MySQL"},
+    {icon: <FaNodeJs />,name: "Postgres SQL"},
+  ]
 
   useEffect( () => {
 
@@ -186,12 +105,15 @@ export default function Home() {
         <Link href="https://github.com/Muditalbet/"><RiGithubFill /></Link>
         <Link href="https://www.linkedin.com/in/mudit-mangtani/"><FaLinkedin /></Link>
       </div>
-      <div className={styles.right_line}></div>
+      <div className={styles.right_line}>
+        <Link href="mailto:muditmangtani@gmail.com">muditmangtani@gmail.com</Link>
+        <div className={styles.line_r}></div>
+      </div>
       <nav className={styles.nav}>
         <div className={styles.logo}>
           <div className={styles.logo_svg}>
             <Link href="/" className={styles.circle}>
-              <div className={styles.circle_text}><i>Mudit</i></div>
+              <div className={styles.circle_text}><i>M</i></div>
             </Link>
           </div>
         </div>
@@ -207,7 +129,7 @@ export default function Home() {
         <div className={styles.heading}>
           <h7 className={styles.highlighted_text}>Hi, My name is</h7>
           <h1>Mudit Mangtani</h1>
-          <h2>Tag-line</h2>
+          <h2>Architecting Complexity,<br />Breathing Life into Code</h2>
           <p>I embody the role of a versatile <span className={styles.highlighted_text}>full-stack engineer</span> and <span className={styles.highlighted_text}>web developer</span>, celebrated for my rapid learning aptitude. My proficiency extends to navigating through the intricacies of <span className={styles.highlighted_text}>sockets</span>, <span className={styles.highlighted_text}>channels</span>, and <span className={styles.highlighted_text}>REST APIs</span>. Delving into the realm of <span className={styles.highlighted_text}>artificial intelligence</span>, I channel my passion into creating cutting-edge solutions, contributing to a diverse portfolio of innovative and impactful software projects.</p>
           <div className={styles.buttons}>
             <Link href="mailto:muditmangtani@gmail.com" className={styles.button}>Contact Me</Link>
@@ -216,7 +138,7 @@ export default function Home() {
         </div>
         <div id="projects" className={styles.projects}>
           <h2>Featured Projects</h2>
-          <h5>Projects tag-line</h5>
+          <h5>Elevating projects with precision and passion, where innovation meets execution.</h5>
           <div className={styles.project}>
             <div style={{backgroundColor:"#dd8000"}} className={styles.image}>
               <img height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/603px-Amazon_logo.svg.png"/>
@@ -283,7 +205,7 @@ export default function Home() {
         </div>
         <div id="about" className={styles.about}>
           <h2>About Me</h2>
-          <h5>About Me tag line</h5>
+          <h5>Navigating the digital realm with a versatile skill set encompassing product development, full-stack expertise, operational architecture, and systems design – forging a well-rounded path in the digital landscape.</h5>
           <div className={styles.about_section}>
             <div className={styles.profile_img}>
               <Image 
@@ -305,31 +227,22 @@ export default function Home() {
           <div className={styles.tech_section}>
             <div className={styles.tech_content}>
               <div>
-                <h4>Programming Languages</h4>
+                <span><SiAuthelia /></span>
+                <h4>Frameworks & Languages</h4>
                 <div>
-                  <p>With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time.</p>
+                  <p>Having amassed over 5 years of hands-on experience in developing diverse projects, I possess a profound and intuitive grasp of the intricacies involved in crafting top-tier software products. Throughout my journey, I've adeptly utilized a range of programming languages and frameworks to contribute to the creation of exceptional interfaces and robust logical structures. Following are some of the frameworks and programming I have used over that time.</p>
                   <div className={styles.skills}>
-                    {programming_languages.map((el, index) => (
+                    {programming_languages.sort((a, b) => a.name.localeCompare(b.name)).map((el, index) => (
                       <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
                     ))}
                   </div>
                 </div>
               </div>
               <div>
-                <h4>Frameworks</h4>
+                <span><GrDeploy /></span>
+                <h4>Databases & Cloud</h4>
                 <div>
-                  <p>With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time.</p>
-                  <div className={styles.skills}>
-                    {frameworks.map((el, index) => (
-                      <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4>Databases</h4>
-                <div>
-                  <p>With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time.</p>
+                  <p>Building is just the beginning; true value emerges when you connect your creations to the world. Throughout my journey, I've honed my skills not only in crafting code but also in deploying it effectively. Connecting the dots between creation and deployment is where the magic happens, and my experience reflects a seamless integration of coding, database management, and cloud services. Some of the services I used are.</p>
                   <div className={styles.skills}>
                     {databases.map((el, index) => (
                       <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
@@ -337,17 +250,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              {/* <div>
-                <h3>Cloud</h3>
-                <div>
-                  <p>With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time.</p>
-                  <div className={styles.skills}>
-                    {clouds.map((el, index) => (
-                      <div key={index}><spam>{el.icon}</spam> <spam>{el.name}</spam></div>
-                    ))}
-                  </div>
-                </div>
-              </div> */}
             </div>
             <div className={styles.globe}>
               <Cobe />
@@ -357,12 +259,12 @@ export default function Home() {
         <div id='experience' className={styles.experience}>
           <h3>Experience</h3>
           <div className={styles.company_section}>
-            <h4>Company #1</h4>
+            <h4>Es Magico</h4>
             <h6>Software Engineer<br />Nov 2022 - Present · 2 Years</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lorem quis erat ultrices fermentum. Sed pharetra vulputate varius. Vestibulum in gravida nibh. Pellentesque bibendum neque massa, sit amet lacinia mi egestas quis. Pellentesque consequat lorem quis lacus malesuada cursus non vel ipsum. In molestie neque quis maximus bibendum. Proin placerat enim non fringilla scelerisque. Suspendisse in est luctus, tempus est accumsan, accumsan lorem.</p>
           </div>
           <div className={styles.company_section}>
-            <h4>Company #2</h4>
+            <h4>Cogno AI</h4>
             <h6>Software Engineer<br />Nov 2022 - Present · 2 Years</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lorem quis erat ultrices fermentum. Sed pharetra vulputate varius. Vestibulum in gravida nibh. Pellentesque bibendum neque massa, sit amet lacinia mi egestas quis. Pellentesque consequat lorem quis lacus malesuada cursus non vel ipsum. In molestie neque quis maximus bibendum. Proin placerat enim non fringilla scelerisque. Suspendisse in est luctus, tempus est accumsan, accumsan lorem.</p>
           </div>
